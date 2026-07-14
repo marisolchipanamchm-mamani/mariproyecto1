@@ -1,0 +1,37 @@
+.titulo{
+    background-color: #4CAF50; /* Color del recuadro */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo h1{
+    color: white;
+    margin: 0;
+    font-size: 30px;
+}
+
+input,
+textarea,
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+.tarea-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.completada {
+    width: 20px;
+    height: 20px;
+}
