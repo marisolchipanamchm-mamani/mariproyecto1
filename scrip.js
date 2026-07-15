@@ -52,6 +52,14 @@ btnAgregar.addEventListener("click", () => {
 });
 
 listaTareas.addEventListener("click", (e) => {
+      if (e.target.classList.contains("btnVer")) {
+        const index = e.target.dataset.index;
+
+        alert(
+            "Tarea: " + tareas[index].tarea +
+            "\n\nDescripción:\n" + tareas[index].descripcion
+        );
+    }
 
     if (e.target.classList.contains("btnEliminar")) {
         const index = e.target.dataset.index;
