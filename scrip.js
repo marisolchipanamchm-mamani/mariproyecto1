@@ -18,7 +18,12 @@ function mostrarTareas() {
                 <input type="checkbox" class="completada">
                 <div class="texto-tarea">
                     <strong>${item.tarea}</strong><br>
-                    <span>${item.descripcion}</span>
+                    <span> ${
+                    item.descripcion.length > 50
+                        ? item.descripcion.substring(0, 50) + "..."
+                        : item.descripcion
+                }
+                    </span>
                 </div>
                    <button class="btnVer" data-index="${index}">Ver</button>
                 <button class="btnEditar" data-index="${index}">Editar</button>
